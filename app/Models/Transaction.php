@@ -9,7 +9,7 @@ class Transaction extends Model
 {
     use HasFactory;
 
-    protected $quarded = [];
+    protected $guarded = [];
 
     public function users()  {
         return $this->belongsTo(User::class, 'user_id');
